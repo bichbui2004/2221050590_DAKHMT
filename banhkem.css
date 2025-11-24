@@ -1,0 +1,123 @@
+body{
+    width: 100%;
+    margin: 0px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    z-index: 100;
+    position: relative;
+}
+.menu{
+    display: flex;
+    position: relative;
+}
+a{
+    list-style: none;
+    text-decoration-line: none;
+    color: black;
+}
+li{
+    list-style: none;
+    padding: 10px;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+.menu li ul{
+    position:absolute;
+    background-color: rgba(89, 81, 81, 0.3);
+    border-radius: 5px;
+    margin: 0px;
+    top: 33px;
+    display:none;
+    z-index: 101;
+}
+.menu li:hover ul{
+    display: block;
+}
+.sub-menu li{ 
+    padding: 5px 10px;
+    margin: 0px;
+    border-radius: 0px 0px 5px 5px;
+}
+.sub-menu li a{
+    color: white;
+}
+.sub-menu li:hover{
+    background-color: rgba(89, 89, 94, 0.5);
+}
+.product-container {
+    width: 80%;
+    margin: 40px auto;
+    font-family: "Nunito", sans-serif;
+}
+.product-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+select{
+    border: none;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.product-item {
+    text-align:center;
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+.product-item h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.pagination {
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.pagination .page,
+.pagination .next {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.pagination .active {
+    background: black;
+    color: white;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+footer .logo{
+    margin-left: 30px;
+}
+.lienhe{
+    display: flex;
+    gap: 40px;
+    width: 70%;
+    align-items: center;
+    margin-right: 50px;
+}

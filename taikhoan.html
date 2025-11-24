@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài khoản</title>
+    <link rel="stylesheet" href="taikhoan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="pic/Screenshot 2025-11-22 092946.png">
+        </div>
+        <ul class="menu">
+            <li><a href="#">TRANG CHỦ</a></li>
+            <li><a href="#">GIỚI THIỆU</a></li>
+            <li><a href="#">BÁNH NGỌT</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Bông lan trứng muối</a></li>
+                    <li><a href="#">Bánh lạnh</a></li>
+                    <li><a href="#">Bánh mì</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Combo</a></li>
+                </ul></li>
+            <li><a href="#">BÁNH KEM</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Bánh cưới</a></li>
+                    <li><a href="#">Bánh khai trương</a></li>
+                    <li><a href="#">Bánh kỉ niệm</a></li>
+                    <li><a href="#">Bánh sinh nhật</a></li>
+                    <li><a href="#">Đặt theo yêu cầu</a></li>
+                </ul></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#"><i class="fa fa-user" style="font-size:20px"></i></a></li>
+            <li><a href="#"><i class="fa fa-shopping-cart" style="font-size:20px"></i></a></li>
+            <li><a href="#"><i class="fa fa-search" style="font-size:20px"></i></a></li>
+        </ul>
+    </header>  
+<main class="account-page">
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Đơn hàng</a></li>
+            <li><a href="#">Địa chỉ</a></li>
+            <li class="active"><a href="#">Tài khoản</a></li>
+            <li><a href="#">Đăng xuất</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <form action="#" method="post">
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first_name">Tên <span>*</span></label>
+                    <input type="text" id="first_name" name="first_name" value="">
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Họ <span>*</span></label>
+                    <input type="text" id="last_name" name="last_name" value="">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="display_name">Tên hiển thị <span>*</span></label>
+                <input type="text" id="display_name" name="display_name" value="fhjjdiufbv">
+                <p class="description">Tên này sẽ hiển thị trong trang Tài khoản và phần Đánh giá sản phẩm</p>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Địa chỉ email <span>*</span></label>
+                <input type="email" id="email" name="email" value="@gmail.com">
+            </div>
+
+            <div class="password-change">
+                <h4>Thay đổi mật khẩu</h4>
+
+                <div class="form-group password-input-group">
+                    <label for="current_password">Mật khẩu hiện tại (bỏ trống nếu không đổi)</label>
+                    <input type="password" id="current_password" name="current_password" value="">
+                </div>
+
+                <div class="form-group password-input-group">
+                    <label for="new_password">Mật khẩu mới (bỏ trống nếu không đổi)</label>
+                    <input type="password" id="new_password" name="new_password" value="">
+                </div>
+
+                <div class="form-group password-input-group">
+                    <label for="confirm_password">Xác nhận mật khẩu mới</label>
+                    <input type="password" id="confirm_password" name="confirm_password" value="">
+                </div>
+
+            </div>
+
+            <button type="submit" class="save-button">Lưu thay đổi</button>
+
+        </form>
+    </div>
+</main>
+    <footer>
+        <div class="logo">
+            <div><img src="pic/Screenshot 2025-11-22 112855.png"></div>
+        </div>
+        <div class="lienhe">
+            <ul class="diachi">
+                <li>GIỜ MỞ CỬA: 7:30 - 22:00</li>
+                <li>Địa chỉ: Trường Đại học Mỏ - Địa Chất, 18 P. Viên, Đông Ngạc, Bắc Từ Liêm, Hà Nội</li>
+            </ul>
+            <ul class="thongtinlienhe">
+                <li>Hotline: 024 3838 9633</li>
+                <li>Email: support@student.humg.edu.vn</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

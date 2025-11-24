@@ -1,0 +1,166 @@
+body{
+    width: 100%;
+    margin: 0px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    z-index: 100;
+    position: relative;
+}
+.menu{
+    display: flex;
+    position: relative;
+}
+a{
+    list-style: none;
+    text-decoration-line: none;
+    color: black;
+}
+li{
+    list-style: none;
+    padding: 10px;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+.menu li ul{
+    position:absolute;
+    background-color: rgba(89, 81, 81, 0.3);
+    border-radius: 5px;
+    margin: 0px;
+    top: 33px;
+    display:none;
+    z-index: 101;
+}
+.menu li:hover ul{
+    display: block;
+}
+.sub-menu li{ 
+    padding: 5px 10px;
+    margin: 0px;
+    border-radius: 0px 0px 5px 5px;
+}
+.sub-menu li a{
+    color: white;
+}
+.sub-menu li:hover{
+    background-color: rgba(89, 89, 94, 0.5);
+}
+.banner {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    margin-bottom: 70px;
+}
+.banner img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position:center;
+
+}
+.gioithieu{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content:space-between;
+}
+.lichsuhinhthanh{
+    width: 50%;
+}
+h2{
+    color:bisque;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+h1{
+    font-size: 30px;
+}
+.thongtin img{
+    width: 450px;
+    margin-bottom: 15px;
+}
+button{
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: bisque;
+}
+.giatricotloi{
+    width: 80%;
+    margin: auto;
+}
+.box{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.box1{
+    width: 30%;
+    padding: 0px 10px;
+}
+.border{
+    border-right: 1px solid lightgray;
+}
+.cacloaisanpham{
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 50px auto; 
+}
+.item:nth-child(1),
+.item:nth-child(2),
+.item:nth-child(3),
+.item:nth-child(4),
+.item:nth-child(5) {
+    grid-column: auto; 
+    grid-row: auto;
+}
+.item {
+    position: relative;
+    overflow: hidden;
+    padding-top: 100%; 
+    height: 0;
+    border-radius: 8px;
+}
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.3s;
+}
+.item:hover img {
+    transform: scale(1.05);
+}
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+footer .logo{
+    margin-left: 30px;
+}
+.lienhe{
+    display: flex;
+    gap: 40px;
+    width: 70%;
+    align-items: center;
+    margin-right: 50px;
+}
