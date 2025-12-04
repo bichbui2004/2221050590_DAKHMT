@@ -75,7 +75,6 @@ ul{
     padding: 10px 20px;
     text-decoration: none;
     color: black;
-    border-left: 3px solid transparent; /* Tạo viền cho mục đang chọn */
     transition: all 0.2s;
 }
 .sidebar li a:hover {
