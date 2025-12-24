@@ -59,7 +59,7 @@
         else{
             if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
                 //Đoạn code xử lý login ban đầu
-                 $sql = "INSERT INTO `combo`(`ten_combo`, `mo_ta`, `gia_combo`, `hinh_anh`, `so_luong`) VALUES ('$tenCombo','$moTa','$gia',' $target_file','$soLuong')";
+                 $sql = "INSERT INTO `combo`(`ten_combo`, `mo_ta`, `gia_combo`, `hinh_anh`, `so_luong`) VALUES ('$tenCombo','$moTa','$gia','$target_file','$soLuong')";
                     mysqli_query($conn,$sql);
                     $combo_id = mysqli_insert_id($conn);
                     foreach($sanPham as $id_sp){
