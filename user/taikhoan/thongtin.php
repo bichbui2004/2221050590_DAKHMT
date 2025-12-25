@@ -69,7 +69,7 @@ $user_data = $stmt_user->get_result()->fetch_assoc();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tài khoản</title>
-    <link rel="stylesheet" href="taikhoan.css">
+    <link rel="stylesheet" href="taikhoanchitiet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>

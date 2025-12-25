@@ -58,7 +58,7 @@ if (isset($_POST['update_address'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Địa chỉ giao hàng</title>
-    <link rel="stylesheet" href="taikhoan.css"> </head>
+    <link rel="stylesheet" href="taikhoanchitiet.css"> </head>
 <body>
 <div class="account-container" style="display: flex; max-width: 1200px; margin: 20px auto; gap: 20px; font-family: sans-serif;">
 
