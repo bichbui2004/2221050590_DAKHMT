@@ -59,7 +59,7 @@
             <h2>Sự lựa chọn hàng đầu. Hương vị tạo nên tên tuổi chúng tôi.</h2>
             <div class="ds-banh">
                 <?php 
-                $sql = "SELECT * FROM san_pham order by id DESC LIMIT 8 "; //lấy ngẫu nhiên order by RAND() LIMIT 8 
+                $sql = "SELECT sp.*, SUM(ct.so_luong) AS tong_ban FROM chi_tiet_don_hang ct JOIN san_pham sp ON ct.id_san_pham = sp.id GROUP BY sp.id ORDER BY tong_ban DESC LIMIT 8";
                 $result = mysqli_query($conn, $sql);
                 while($spham = mysqli_fetch_array($result)){
                 ?>
