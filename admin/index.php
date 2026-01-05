@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quản lý tài khoản</title>
     <link rel="stylesheet" href="quantri-taikhoan.css">
+    <style>
+        .box-trai .box{
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <?php
