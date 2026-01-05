@@ -15,9 +15,8 @@
                 <input type="hidden" name="page_layout" value="banhngot">
                 <select name="sap-xep" onchange="this.form.submit()">
                     <option value="1" <?php if($_GET['sap-xep'] ?? '' == 1) echo 'selected'; ?>>Mới nhất</option>
-                    <option value="2" <?php if($_GET['sap-xep'] ?? '' == 2) echo 'selected'; ?>>Phổ biến nhất</option>
-                    <option value="3" <?php if($_GET['sap-xep'] ?? '' == 3) echo 'selected'; ?>>Giá: Cao đến thấp</option>
-                    <option value="4" <?php if($_GET['sap-xep'] ?? '' == 4) echo 'selected'; ?>>Giá: Thấp đến cao</option>
+                    <option value="3" <?php if($_GET['sap-xep'] ?? '' == 2) echo 'selected'; ?>>Giá: Cao đến thấp</option>
+                    <option value="4" <?php if($_GET['sap-xep'] ?? '' == 3) echo 'selected'; ?>>Giá: Thấp đến cao</option>
                 </select>
             </form>
         </div>
@@ -28,12 +27,9 @@
                 $order_by = "ORDER BY id DESC";
                 break;
             case 2:
-                $order_by = "ORDER BY so_luong_ban DESC";
-                break;
-            case 3:
                 $order_by = "ORDER BY gia ASC";
                 break;
-            case 4:
+            case 3:
                 $order_by = "ORDER BY gia DESC";
                 break;
             default:
